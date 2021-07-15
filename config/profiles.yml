@@ -1,0 +1,26 @@
+default:
+  outputs:
+
+    dev:
+      type: redshift
+      host: italic-warehouse.czv9v9ub8hur.ap-southeast-1.redshift.amazonaws.com
+      user: italic
+      password: AyJch2985pZiMX9
+      port: 5439
+      dbname: italic
+      schema: analytics
+      threads: 4
+      keepalives_idle: 0
+    
+    prod: 
+      type: redshift
+      host: italic-warehouse.czv9v9ub8hur.ap-southeast-1.redshift.amazonaws.com
+      user: italic
+      password: AyJch2985pZiMX9
+      port: 5439
+      dbname: italic
+      schema: analytics
+      threads: 4
+      keepalives_idle: 0  
+    
+  target: dev
